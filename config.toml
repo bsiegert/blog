@@ -1,4 +1,4 @@
-baseURL = "http://bentsukun.ch/"
+baseURL = "https://bentsukun.ch/"
 languageCode = "en-us"
 title = "benzblog"
 theme = "purehugo"
