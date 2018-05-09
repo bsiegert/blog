@@ -1,7 +1,6 @@
 ---
 title: Windows 10 April Update, unbootable system
-date: 2018-05-09 13:49
-draft: true
+date: 2018-05-09T18:44:00+02:00
 ---
 
 A few days ago, I installed the Windows 10 “April update”, and it broke my GRUB installation. What happened?
@@ -33,7 +32,7 @@ Unfortunately, there is no way (that I could find) to make the new prefix perman
 
 As a result, I would need to boot a [grml.org](https://grml.org/) rescue system and reinstall grub from there.
 
-# Working around
+## Working around
 
 There is an easier way to make GRUB find its files again. We just need to make sure the partition table matches what it expects.
 
@@ -43,7 +42,7 @@ So in my case, I swapped partitions #3 and #4, and GRUB worked again!
 
 And one day later, Windows decided to apply the May update to the April update -.-
 
-# Addendum: What new partition!?
+## Addendum: What new partition!?
 
 Honestly, I am not sure what the new partition is actually doing. Even though I want a single Windows partition, there are now three of them:
 
