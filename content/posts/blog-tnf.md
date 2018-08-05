@@ -1,6 +1,8 @@
 ---
 title: "blog @ TNF"
 date: 2012-03-20T20:53:03+01:00
+categories:
+ - NetBSD
 ---
 So now I am even [posting over at
 TNF](http://blog.NetBSD.org/tnf/entry/new_netbsd_flyers_available) on

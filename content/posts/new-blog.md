@@ -1,6 +1,8 @@
 ---
 title: "New Blog!"
 date: 2018-01-18T19:44:52+01:00
+categories:
+ - Cloud
 ---
 
 My new year's resolution for 2018 has been to blog more. So I decided to create

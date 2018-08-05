@@ -2,7 +2,9 @@
 title: "pkgsrc: Saving and Restoring State"
 date: 2018-03-03T20:53:40+01:00
 draft: true
-tags: pkgsrc
+categories:
+ - pkgsrc
+ - NetBSD
 ---
 
 If you have not upgraded the packages in your pkgsrc installation in a while,

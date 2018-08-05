@@ -1,7 +1,9 @@
 ---
 title: "Leaving AWS"
 date: 2017-12-03T22:16:42+01:00
-tags: [NetBSD, Cloud]
+categories:
+ - NetBSD
+ - Cloud
 ---
 
 Today, I deleted my Amazon AWS account.

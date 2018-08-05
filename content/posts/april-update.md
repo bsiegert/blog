@@ -1,6 +1,8 @@
 ---
 title: Windows 10 April Update, unbootable system
 date: 2018-05-09T18:44:00+02:00
+categories: 
+ - Windows
 ---
 
 A few days ago, I installed the Windows 10 “April update”, and it broke my GRUB installation. What happened?
