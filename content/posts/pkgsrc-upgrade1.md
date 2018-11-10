@@ -1,11 +1,12 @@
 ---
-title: "pkgsrc: Saving and Restoring State"
-date: 2018-03-03T20:53:40+01:00
-draft: true
+title: "pkgsrc: Upgrading, Part 1"
+date: 2018-11-10T18:46:40+01:00
 categories:
  - pkgsrc
- - NetBSD
 ---
+
+*I found this text in my post drafts, where it had been sitting for a bit.
+Consider this the first part of a series on keeping pkgsrc up to date.*
 
 If you have not upgraded the packages in your pkgsrc installation in a while,
 you might be so far behind on updates that most or all your packages are
@@ -25,10 +26,6 @@ middle. When the compilation of a package fails, the tool just stops and leaves
 you with an inconsistent (and in the worst case, non-working) set of packages.
 Good luck fixing things. Making a backup of your `/usr/pkg` and `/var/db/pkg*`
 directories *before* you start is a good idea.
-
-
-
-
 
 
 [`pkg_rolling-replace`]: http://pkgsrc.se/pkgtools/pkg_rolling-replace
