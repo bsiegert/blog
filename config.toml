@@ -10,5 +10,6 @@ category = "categories"
 [params]
 twitterName = "bentsukun"
 githubName = "bsiegert"
-googleplus = true
-twitter = true
+googleplus = false
+twitter = false
+hideShareOptions = true
