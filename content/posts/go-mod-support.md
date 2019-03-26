@@ -18,18 +18,18 @@ the build could start by doing `go mod init` (which needs to be after `make extr
 
 There can be two implementations of the `fetch` phase:
 
-1. Run `go mod download`. 
+1.  Run `go mod download`. 
 
-   It should download required packages into a cache directory, `$GOPATH/pkg/mod/cache/download`.
-   Then, I propose tarring up the whole tree into a single .tar.gz and putting that into the distfile directory
-   for `make checksum`. Alternatively, we could have the individual files from the cache as "distfiles". Note however
-   (see below) that the filenames alone do not contain the module name, so there will be tons of files named `v1.0.zip`
-   and so on.
+    It should download required packages into a cache directory, `$GOPATH/pkg/mod/cache/download`.
+    Then, I propose tarring up the whole tree into a single .tar.gz and putting that into the distfile directory
+    for `make checksum`. Alternatively, we could have the individual files from the cache as "distfiles". Note however
+    (see below) that the filenames alone do not contain the module name, so there will be tons of files named `v1.0.zip`
+    and so on.
    
-2. "Regular fetch"
+2.  "Regular fetch"
 
-   Download the .tar.gz (or the set of individual files) from above from the `LOCAL_PORTS` directory on ftp.n.o,
-   as usual.
+    Download the .tar.gz (or the set of individual files) from above from the `LOCAL_PORTS` directory on ftp.n.o,
+    as usual.
 
 The files that `go mod download` creates are different from any of the ones
 that upstream provides. Notably, the zip files are based on a VCS checkout followed by re-zipping. Here is an example
