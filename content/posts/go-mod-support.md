@@ -3,6 +3,7 @@ title: "Supporting Go Modules in pkgsrc, a Proposal"
 date: 2018-12-29T13:12:02+01:00
 categories:
  - pkgsrc
+ - go
 ---
 
 
