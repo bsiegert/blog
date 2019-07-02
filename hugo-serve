@@ -1,0 +1,2 @@
+#!/bin/sh
+hugo serve --bind :: --baseURL penguin.linux.test:1313 -D
