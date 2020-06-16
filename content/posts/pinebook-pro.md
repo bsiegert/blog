@@ -1,7 +1,6 @@
 ---
 title: "Pinebook Pro, First Impressions"
-date: 2020-05-29T18:37:25Z
-draft: true
+date: 2020-05-31T16:04:25Z
 tags:
  - NetBSD
  - PinebookPro
@@ -23,7 +22,15 @@ with generally more premium components.
 As I alluded to in the first paragraph, the enthusiasm of the Free
 Software community is incredibly strong! Nothing showed this better than
 the incredible resonance from a tweet with a quick snapshot after the
-first boot. What makes this device attractive, apart from the price, is
+first boot:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s here, a day earlier than expected! <a href="https://twitter.com/thepine64?ref_src=twsrc%5Etfw">@thepine64</a> <a href="https://twitter.com/hashtag/PineBookPro?src=hash&amp;ref_src=twsrc%5Etfw">#PineBookPro</a> <a href="https://t.co/HIMdnFtxIG">pic.twitter.com/HIMdnFtxIG</a></p>&mdash; benz (@bentsukun) <a href="https://twitter.com/bentsukun/status/1266072937821614080?ref_src=twsrc%5Etfw">May 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+You'll note, in passing, that on the photo, I am downloading the
+NetBSD install image :)
+
+What makes this device attractive, apart from the price, is
 the ARM architecture without the baggage of the PC world. What's more,
 an open and hackable system in the age of Macbooks with soldered
 everything, tablets that you cannot open, "secure" boot that severely
