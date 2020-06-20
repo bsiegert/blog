@@ -1,7 +1,7 @@
 ---
 title: "Pinebook Pro, First Impressions"
 date: 2020-05-31T16:04:25Z
-tags:
+categories:
  - NetBSD
  - PinebookPro
 ---
