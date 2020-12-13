@@ -36,8 +36,7 @@ of your use case and the effort to develop the tooling has been reached.
 
 # Jump-starting
 
-These days, increasingly, instead of going from #1 to #2, increasingly there
-is this:
+These days, increasingly, instead of going from #1 to #2, there is this:
 
  - Adapt a large, complex tool that has been open-sourced by a large company.
    Start by using a few percent of the features and increase over time.
