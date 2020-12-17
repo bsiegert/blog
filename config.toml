@@ -13,3 +13,7 @@ githubName = "bsiegert"
 googleplus = false
 twitter = false
 hideShareOptions = true
+
+[markup]
+[markup.highlight]
+style = "github"
