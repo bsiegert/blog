@@ -5,14 +5,14 @@ categories:
  - NetBSD
  - TrueNAS
 ---
-My new NAS at home is running TrueNAS Core. So far, it has been excellent,
+My new NAS at home is running [TrueNAS Core]. So far, it has been excellent,
 however I struggled a bit setting up a NetBSD VM on it. Part of the problem is
 that a lot of the docs and how-tos I found are stale, and the information in it
 no longer applies.
 
-TrueNAS Core allows running VMs using **bhyve**, which is FreeBSD's hypervisor.
+[TrueNAS Core] allows running VMs using **bhyve**, which is FreeBSD's hypervisor.
 NetBSD is not an officially supported OS, at least according to the guest OS
-chooser in the TrueNAS web UI :) But since the release of NetBSD 9 a while ago,
+chooser in the [TrueNAS] web UI :) But since the release of NetBSD 9 a while ago,
 things have become far simpler than they used to be -- with one caveat (see
 below).
 
@@ -190,3 +190,6 @@ wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
 ```
+
+[TrueNAS Core]: https://truenas.com/truenas-core/
+[TrueNAS]: https://truenas.com/
