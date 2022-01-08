@@ -1,40 +1,15 @@
 ---
-title: "Deleting Records Faster"
-date: 2021-12-28T18:36:44+01:00
+title: "The BulkTracker Outage"
+date: 2022-01-08T17:12:44+01:00
 categories:
 - cloud
-draft: true
 ---
 
 I have been running the [BulkTracker] web app for keeping track of [pkgsrc]
-bulk package build results since about 2015. Unfortunately, I never implemented
-automatic expiration of results, so they have been accumulating ever since.
+bulk package build results since about 2015.
 
-So I built a small tool that deletes the detailed data for the *n* oldest builds
-in the database, and I notice it would run fairly slowly: deleting a set of
-20,000 records would take about 3 minutes. This seems like a lot.
-
-## Datastore
-
-As an App Engine application, using the App Engine datastore (a NoSQL database)
-was a logical choice at the time. A SQL database may have been more appropriate
-for the workload, as I later found out, but the pricing for Google Cloud SQL is
-prohibitive for a small application.
-
-Small side note: Through my job I learned how App Engine Datastore was actually
-implemented, and it was *horrifying*.
-
-Over the years, App Engine Datastore became first Cloud Datastore -- an offering
-independent from App Engine that can be used with any Cloud application -- then
-something called "Cloud Firestore in Datastore Mode". Firestore is the Firebase
-NoSQL database; its API is very different from the Datastore one, but there is a
-shim layer that provides the Datastore API on top of it. The migration was
-transparent and flawlessly done by the Google Cloud folks -- kudos.
-
-## My first outage
-
-After running without problems since 2015 (!!), the BulkTracker app had its
-first outage in November of 2020. It turns out that the function that renders
+After running without problems since the start (!!), the BulkTracker app had its
+first outage in November of 2021. It turns out that the function that renders
 the home page returns a 500 if it gets an error from Datastore. The error that
 was returned was:
 
@@ -68,6 +43,31 @@ data.
 [pkgsrc]: https://pkgsrc.org/
 [complaining on Twitter]: https://twitter.com/bentsukun/status/1466492927643987976
 [bsiegert/BulkTracker#26]: https://github.com/bsiegert/BulkTracker/issues/26
+
+
+Unfortunately, I never implemented
+automatic expiration of results, so they have been accumulating ever since.
+I built a small tool that deletes the detailed data for the *n* oldest builds
+in the database, and I notice it would run fairly slowly: deleting a set of
+20,000 records would take about 3 minutes. This seems like a lot. The next post
+in this series will talk about how I made this faster.
+
+## Background: Datastore
+
+As an App Engine application, using the App Engine datastore (a NoSQL database)
+was a logical choice at the time. A SQL database may have been more appropriate
+for the workload, as I later found out, but the pricing for Google Cloud SQL is
+prohibitive for a small application.
+
+Small side note: Through my job I learned how App Engine Datastore was actually
+implemented, and it was *horrifying*.
+
+Over the years, App Engine Datastore became first Cloud Datastore -- an offering
+independent from App Engine that can be used with any Cloud application -- then
+something called "Cloud Firestore in Datastore Mode". Firestore is the Firebase
+NoSQL database; its API is very different from the Datastore one, but there is a
+shim layer that provides the Datastore API on top of it. The migration was
+transparent and flawlessly done by the Google Cloud folks -- kudos.
 
 ## Some Statistics
 
