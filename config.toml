@@ -10,6 +10,7 @@ category = "categories"
 [params]
 twitterName = "bentsukun"
 githubName = "bsiegert"
+fediverseAddress = "mastodon.sdf.org/@bentsukun"
 googleplus = false
 twitter = false
 hideShareOptions = true
