@@ -33,7 +33,7 @@ It makes sense to have your main OS on the built-in storage, since it is quite a
 
 By the way, if you want more and even faster Storage, PINE64 will sell you an adapter board for adding an NVMe drive (a fast SSD).
 
-Once you have booted NetBSD from the memory card, mount the Linux volume and copy over the image file from before, then unmount and extract it in exactly the same way as above. The only difference is that the target device is called `/dev/rld0d`. Shut down the system, remove the memory card, switch it back on and watch NetBSD come up :)
+Once you have booted NetBSD from the memory card, mount the Linux volume and copy over the image file from before, then unmount and extract it in exactly the same way as above. The only difference is that the target device is called `/dev/rld0`. Shut down the system, remove the memory card, switch it back on and watch NetBSD come up :)
 
 # Getting a -current Kernel
 
@@ -59,3 +59,5 @@ tar xvpfz /path/to/base.tgz libdata/firmware
 In my experience however, the Broadcom Wi-Fi driver is extremely likely to make the system crash or hang. I tend to rely mostly on an old Apple Ethernet-USB adapter (an `axe` interface).
 
 **NOTE:** I have since back-pedaled and returned to NetBSD 9. Other than the unstable Wi-Fi, I also had crashes when running `npm install` and other issues.
+
+**Update 2022-08-27**: changed the device name for writing the image, thanks Nikita!
