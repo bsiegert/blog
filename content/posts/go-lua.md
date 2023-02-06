@@ -3,7 +3,6 @@ title: "Using Lua from Go"
 date: 2023-02-06T14:51:03+01:00
 categories:
  - Go
-draft: true
 ---
 
 Last weekend, at [FOSDEM 2023](https://fosdem.org), I watched a Lightning Talk
