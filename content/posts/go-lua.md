@@ -25,7 +25,7 @@ original C implementation! They use this for scripting the behavior (ha!) of
 their load testing tools. The package is at
 [github.com/Shopify/go-lua](https://pkg.go.dev/github.com/Shopify/go-lua).
 
-It turns out that the example fromt the talk translates 1:1 to Go and Lua:
+It turns out that the example from the talk translates 1:1 to Go and Lua:
 
 ```go
 package main
