@@ -15,7 +15,6 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-        run: hugo
       - name: Run hugo
         run: hugo
       - name: Deploy
