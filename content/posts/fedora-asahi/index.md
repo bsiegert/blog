@@ -1,7 +1,6 @@
 ---
 title: "Fedora Asahi Remix"
 date: 2024-02-03T10:21:03+01:00
-draft: true
 categories:
  - Linux
 ---
