@@ -1,6 +1,8 @@
 ---
 title: "Emulating *BSD on ARM, Part 2: FreeBSD"
 date: 2024-11-11T20:52:35+01:00
+categories:
+ - FreeBSD
 ---
 
 In [Part 1](/posts/bsd-arm-qemu/) of this blog post series, I explained how I recently spent some time getting various BSD OSes to run on QEMU, for 32-bit ARM (ARMv7). This part deals with FreeBSD.
