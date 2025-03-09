@@ -2,7 +2,10 @@ baseURL = "https://bentsukun.ch"
 languageCode = "en-us"
 title = "benzblog"
 theme = "purehugo"
-Paginate = 10
+
+
+[pagination]
+pagerSize = 10
 
 [taxonomies]
 category = "categories"
@@ -18,3 +21,6 @@ additionalLinks.Talks = "/talks"
 [markup]
 [markup.highlight]
 style = "github"
+# Delete this bit after removing the Twitter embeds
+[markup.goldmark.renderer]
+unsafe = true
