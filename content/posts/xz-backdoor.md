@@ -1,7 +1,7 @@
 ---
 title: "The XZ Backdoor"
 date: 2024-03-31T20:32:45+02:00
-tags:
+categories:
  - opensource
 ---
 Over the Easter weekend 2024, there was a big kerfuffle around a compression

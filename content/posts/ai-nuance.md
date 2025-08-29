@@ -1,6 +1,9 @@
 ---
 title: "Some nuanced thoughts on AI"
 date: 2025-05-04T16:51:02+02:00
+categories  :
+  - personal
+  - AI
 ---
 *I have stuggled with writing this for a while. This has the potential to
 be controversial: Some people have very strong opinions on this, while
