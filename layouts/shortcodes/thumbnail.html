@@ -1,0 +1,27 @@
+{{/* Get the original image resource from the page bundle or assets folder */}}
+{{- $src := .Get "src" -}}
+{{- $image := "" -}}
+
+{{- with .Page.Resources.GetMatch $src -}}
+    {{ $image = . }}
+{{- else -}}
+    {{- with resources.Get $src -}}
+        {{ $image = . }}
+    {{- end -}}
+{{- end -}}
+
+{{/* Process the image */}}
+{{- if $image -}}
+    {{- $resized := $image.Process "resize 600x" -}}
+    
+    <figure>
+	<a href="{{ $image.RelPermalink }}">
+	    <img src="{{ $resized.RelPermalink }}" 
+		 alt="{{ .Get "alt" }}" 
+		 width="{{ $resized.Width }}" 
+		 height="{{ $resized.Height }}"
+	    >
+	</a>
+        {{ with .Inner }}<figcaption>{{ . }}</figcaption>{{ end }}
+    </figure>
+{{- end -}}
