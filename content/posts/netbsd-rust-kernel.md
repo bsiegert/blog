@@ -1,7 +1,6 @@
 ---
 title: "Rust in the Kernel, and other odd decisions"
 date: 2026-01-30T12:19:28+01:00
-draft: true
 categories:
  - NetBSD
 ---
