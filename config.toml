@@ -12,7 +12,7 @@ category = "categories"
 
 [params]
 githubName = "bsiegert"
-fediverseAddress = "mastodon.sdf.org/@bentsukun"
+fediverseAddress = "mastodon.bsd.cafe/@bentsukun"
 googleplus = false
 twitter = false
 hideShareOptions = true
