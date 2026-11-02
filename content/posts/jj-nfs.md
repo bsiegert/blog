@@ -1,6 +1,9 @@
 ---
 title: "jj on NFS is not fun"
 date: 2026-10-19T08:32:02Z
+categories:
+ - pkgsrc
+ - opensource
 ---
 
 You may have seen my relentless stanning of the `jj` version control system,

@@ -1,6 +1,8 @@
 ---
 title: "My FrOSCon 2026 talk"
 date: 2026-08-21T21:30:05+02:00
+categories:
+ - talks
 ---
 At [FrOSCon 2026](https://froscon.org/), I gave a talk titled
 

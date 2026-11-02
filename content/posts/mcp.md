@@ -3,6 +3,7 @@ title: "MCP bad?"
 date: 2026-05-25T11:05:19+02:00
 categories:
  - work
+ - AI
 ---
 
 A while ago, I made an off-hand remark that got some followup questions. I said
